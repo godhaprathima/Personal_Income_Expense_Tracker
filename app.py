@@ -89,4 +89,4 @@ def set_update_financials(username,year,month,field,source,amount):
     
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
