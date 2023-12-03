@@ -87,6 +87,15 @@ def set_update_financials(username,year,month,field,source,amount):
     if(update_id.modified_count>0):
         return jsonify({'message': 'Financial record updated'}), 201
     
+@app.route('/delete_financials/<username>/<int:year>/<month>', methods=['DELETE'])
+def delete_financials(username, year, month):
+    # Delete the financial record from the database
+    result = mongo.db.users_financials.delete_one({'username': username, 'year': year, 'month': month})
+    
+    if result.deleted_count > 0:
+        return jsonify({'message': 'Financial record deleted successfully'}), 200
+    else:
+        return jsonify({'error': 'No record found'}), 404
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
