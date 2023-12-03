@@ -6,7 +6,7 @@ import seaborn as sns
 
 #st.set_page_config(layout="wide")
 
-BACKEND_URL = "http://127.0.0.1:5000"  # Change to your Flask API URL after deployment
+BACKEND_URL = "https://app-flask-3gn5.onrender.com/"  # Change to your Flask API URL after deployment
 
 st.title("Personal Income Expense Tracker")
 def show_login_form():
