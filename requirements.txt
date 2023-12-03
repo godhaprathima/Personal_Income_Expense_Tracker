@@ -9,4 +9,5 @@ gunicorn==20.1.0
 protobuf==3.20.0
 altair==4.1.0
 click>=8.0
-
+matplotlib==3.5.1
+seaborn==0.11.2
