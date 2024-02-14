@@ -17,4 +17,4 @@ Create a web application using .py files and deploy the application
 
 -- requirements.txt contains the packages with versions required.
 
-The final deployed application URL: https://adt-streamlit-app.onrender.com/
+The final application can be deployed.
